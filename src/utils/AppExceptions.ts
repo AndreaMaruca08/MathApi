@@ -1,0 +1,16 @@
+export class AppError extends Error {
+    public readonly statusCode: number;
+
+    constructor(message: string, statusCode = 500) {
+        super(message);
+        this.name = "AppError";
+        this.statusCode = statusCode;
+    }
+}
+
+export class BadRequestError extends AppError {
+    constructor(message: string) {
+        super(message, 400);
+        this.name = "BadRequestError";
+    }
+}

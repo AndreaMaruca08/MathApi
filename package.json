@@ -1,0 +1,21 @@
+{
+  "name": "mathapi",
+  "version": "0.0.0",
+  "private": true,
+  "scripts": {
+    "start": "node ./Server.js"
+  },
+  "dependencies": {
+    "chalk": "^5.6.2",
+    "cookie-parser": "~1.4.4",
+    "debug": "~2.6.9",
+    "express": "5.0.0",
+    "http-errors": "~1.6.3",
+    "morgan": "~1.9.1",
+    "pug": "3.0.3",
+    "tsc": "^2.0.4"
+  },
+  "devDependencies": {
+    "@types/express": "^5.0.6"
+  }
+}
