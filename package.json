@@ -3,7 +3,7 @@
   "version": "0.0.0",
   "private": true,
   "scripts": {
-    "start": "node ./Server.js",
+    "start": "node ./dist/Server.js",
     "build": "tsc -p tsconfig.json"
   },
   "dependencies": {

@@ -18,8 +18,7 @@ export class Logger {
         this.port = port;
         console.log(chalk.greenBright.bold(this.message));
         console.log(chalk.greenBright.bold(
-            "-----------------------------------------------------" +
-            "-----------------------------------------------------"));
+            "==============================================="));
         Logger.info("Server started");
     }
 

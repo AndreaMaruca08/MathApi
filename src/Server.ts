@@ -3,6 +3,7 @@ import {Logger} from "./utils/Logger.js";
 import {router} from './api/basicsController.js';
 import {AppError} from "./utils/AppExceptions";
 import {internal} from "./utils/HttpResponses";
+import {FuncStudyController} from "./api/FuncStudyController";
 
 
 const app = express();
@@ -12,6 +13,7 @@ app.use(express.json());
 app.listen(port, () => {Logger.start(port);});
 
 app.use("/basics", router);
+app.use("/func", FuncStudyController);
 
 app.use((err: unknown, _req: Request, res: Response, _next: NextFunction) => {
     if (err instanceof AppError) {
